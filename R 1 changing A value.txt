@@ -1,0 +1,9 @@
+> a = "mobile"
+> a
+[1] "mobile"
+> a ="pen"
+> a
+[1] "pen"
+> a = "makeup"
+> a
+[1] "makeup"
