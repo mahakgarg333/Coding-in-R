@@ -1,0 +1,15 @@
+> vec1 <- c(1,2,3)
+> class(vec1)
+[1] "numeric"
+> vec1
+[1] 1 2 3
+> vec2 <- c("a", "b", "c")
+> vec2
+[1] "a" "b" "c"
+> class(vec2)
+[1] "character"
+> vec3 <- c(T, F, T)
+> vec3
+[1]  TRUE FALSE  TRUE
+> class(vec3)
+[1] "logical"
