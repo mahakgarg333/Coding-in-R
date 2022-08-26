@@ -1,0 +1,9 @@
+> #factor
+> color1 <- c("blue","green", "yellow")
+> color1
+[1] "blue"   "green"  "yellow"
+> as.factor(color1) -> color1
+> color1
+[1] blue   green  yellow
+Levels: blue green yellow
+> 
