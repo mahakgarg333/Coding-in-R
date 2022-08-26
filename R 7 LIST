@@ -1,0 +1,36 @@
+> #list is single dimension heterogeneous data structure
+> # whereas vector is homogeneous data structure
+> 
+> l1 <- list(1, "a", TRUE)
+> l1
+[[1]]
+[1] 1
+
+[[2]]
+[1] "a"
+
+[[3]]
+[1] TRUE
+
+> class(l1[[1]])
+[1] "numeric"
+> class(l1[[2]])
+[1] "character"
+> class(l1[[3]])
+[1] "logical"
+> 
+> l2 <- list(c(1,2,3),c("a", "b", "c"),c(T,F,T))
+> l2
+[[1]]
+[1] 1 2 3
+
+[[2]]
+[1] "a" "b" "c"
+
+[[3]]
+[1]  TRUE FALSE  TRUE
+
+> l2[[2]][2]
+[1] "b"
+> l2[[3]][2]
+[1] FALSE
