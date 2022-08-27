@@ -1,0 +1,230 @@
+"Hello World!"
+
+5+5
+
+plot(1:10)
+
+print("Hello World!")
+
+for(x in 1:10)
+{
+    print(x)
+}
+
+name<- "John"
+age<- 40
+name 
+age
+
+
+text<-"awesome"
+paste("R is ", text)
+
+text1 <- "R is"
+text2 <- "awesome"
+paste(text1, text2)
+
+
+num1 <- 5 
+num2 <- 10
+num1 + num2
+
+
+#num1 <-5
+#Text <-"Some Text"
+#num1 + Text
+
+#Class Data Types 
+#numeric 
+x <- 10.5 
+class(x)
+
+#integer 
+x <- 1000L 
+class(x)
+
+#complex 
+x <- 9i+3
+class(x)
+
+#R numbers - numeric, integer, complex
+
+x<-10.5 
+y<-10L
+z<- 1i
+x 
+y 
+z
+class(x)
+class(y)
+class(z)
+as.numeric(z)
+as.integer(x)
+as.complex(y)
+class(x)
+class(y)
+class(z)
+
+#Assign the same value to multiple variables in ONE LINE 
+var1 <- var2 <- var3 <- "HarryPotter"
+var1 
+var2 
+var3
+
+
+
+# Legal variable names:
+myvar <- "Mahak"
+my_var <- "Manas"
+myVar <- "Deepika"
+MYVAR <- "Priyanshu"
+myvar2 <- "Saachi"
+.myvar <- "Ritika"
+
+# Illegal variable names:
+#2myvar <- "John"
+#my-var <- "John"
+#my var <- "John"
+#_my_var <- "John"
+#my_v@ar <- "John"
+#TRUE <- "Johnn" 
+
+
+#Operators 
+10+5 
+100-50 
+
+#Built in math functions
+max(10,20,30)
+
+min(50,60,70)
+
+sqrt(16)
+
+abs(-4.7)
+
+ceiling(1.4)
+floor(1.4)
+
+
+
+
+#R strings 
+str <- "Hello"
+str 
+
+#Multiline string 
+str1 <- "Hello My name is MAHAK 
+Currently I am a student of UPES 
+I am enjoying R programming language.\n"
+cat(str1)    #Used for line break at same position in code 
+
+#To find number of characters in string 
+str3 <- "Dehradun weather is amazing."
+nchar(str3)
+
+#grepl() function to check if a character or sequence of character is present in the string
+
+str4 <- "I belong from Ghaziabad Uttar Pradesh."
+grepl("Uttar", str4)
+
+#Paste()function to merge or concatenate two strings 
+str5 <-"Hello"
+str6 <- "Kitty"
+paste(str5, str6)
+
+#Escape character
+str <- "\\We are the \rso-called \"Vikings\", from the\b \tnorth.\n"
+str
+cat(str)
+
+#R booleans / Logical values 
+10>9 
+10==9 
+10<9 
+
+a<-5 
+b<-10 
+a>b 
+
+#if else loop 
+a <- 100 
+b <- 200 
+if(b>a){
+    print("B is greater than A")
+}else{
+    print("B is not greater than A")
+}
+
+#for loop 
+week <- c('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
+for(day in week)
+{
+    print(day)
+}
+
+#While loop 
+val = 1
+while(val<5){
+    print(val)
+    val = val+1
+}
+
+
+
+#factorial 
+n<-5 
+factorial <- 1 
+i <- 1 
+while(i<=n){
+    factorial = factorial*i 
+    i = i+1 
+}
+print(factorial)
+
+
+#Repeat Loop 
+val =1 
+repeat{
+    print(val)
+    val = val + 1 
+    if(val>5){
+        break
+    }
+}
+
+#repeat loop 
+#repeat 
+#{
+#    print('UPES!')
+#   i =i + 1 
+#   if(i==5)
+#   {
+#        break
+#    }
+#}
+
+
+#for loop 
+#break keyword 
+for(val in 1:5)
+{
+    if(val == 30)
+    {
+        break
+    }
+    print(val)
+}
+
+
+#for loop 
+#next keyword 
+
+for(val in 1:10)
+{
+    if(val == 5)
+    {
+        next
+    }
+    print(val)
+}
