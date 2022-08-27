@@ -1,0 +1,105 @@
+# R Functions 
+#A function is a block of code which only runs when it is called. 
+#You can pass data known as parameters into a function
+# A function can return data as a result 
+
+#To create a function we can use the function keyword. 
+
+my_function <- function() {
+    print("Hello World")
+}
+my_function()      #to call a function 
+
+#Arguments - It is the information which we pass inside parenthesis. 
+#We can add as many arguments as we want , we just need to separate them with comma.
+
+my_function <- function(fname){
+    paste(fname, "Mahak")
+}
+my_function("Manas")
+my_function("Ritika")
+my_function("Shivam")
+my_function("Deepak")
+my_function("Jyoti")
+
+
+
+func <- function(fname, lname){
+    paste(fname, lname)
+}
+func("Mahak", "Garg")
+
+
+
+#func <- function(fname, lname){
+#   paste(fname, lname)
+#}
+#func("Mahak")   #Will show an error 
+
+
+
+my_function <- function(country = "Norway") {
+  paste("I am from", country)
+}
+
+my_function("Sweden")
+my_function("India")
+my_function() # will get the default value, which is Norway
+my_function("USA")
+
+
+#Return Values 
+my_function <- function(x){
+    return(5*x)
+}
+print(my_function(3))
+print(my_function(4))
+
+
+
+#NESTED FUNCTION 
+nested_function <- function(x,y){
+    a <- x+y
+    return(a)
+}
+nested_function(nested_function(2,2), nested_function(3,3))
+
+
+
+
+
+#Function within a function 
+outer_func <- function(x){
+    inner_function <- function(y){
+        a <- x+y 
+        return(a)
+    }
+    return(inner_function)
+}
+output <- outer_func(3)
+output(5)
+
+
+# GLOABAL VARIABLES 
+#Gloabal variables are created outside of a function and is known as global variables. 
+#Global variables can be used by everyone, both inside of functions and outside. 
+
+
+txt <- "Upes"
+my_function <- function() {
+    paste("R is", txt)
+}
+my_function
+txt
+
+
+
+#GLOBAL ASSIGNMENT OPERATOR 
+my_function <- function() {
+txt <<- "Cheesecake"
+  paste("R is", txt)
+}
+
+my_function()
+
+print(txt)
