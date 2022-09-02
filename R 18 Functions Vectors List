@@ -1,0 +1,114 @@
+my_function <- function(){
+    print("Hello World!")
+}
+my_function();
+
+my_function <- function(fname){
+    paste(fname, "Griffin")
+}
+
+my_function("Peter")
+my_function("Lois")
+my_function("Stewie")
+
+my_function<- function(country = "Norway"){
+    paste("I am from",country)
+}
+my_function("Sweden")
+my_function("India")
+my_function("USA")
+my_function()
+
+my_function<- function(x){
+    return(5*x)
+}
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+Nested_function <- function(x,y){
+a <- x + y 
+return(a)
+}
+Nested_function(Nested_function(2,2),Nested_function(3,3))
+
+Outer_func <- function(x){
+    Inner_func <- function
+    {
+        a <- x+y 
+        return(a)
+    }
+    return(Inner_func)
+}
+output <- Outer_func(3)
+output(5)
+
+tri_recursion <- function(k){
+    if(k>0){
+        result <- k + tri_recursion(k - 1)
+        print(result)
+    }else{
+        result = 0
+        return(result)
+    }
+}
+tri_recursion(3)
+
+txt <- "awesome"
+my_function<- function(){
+    paste("R is", txt)
+}
+my_function()
+
+txt <- "Global Variable"
+my_function <- function(){
+    txt = "fantastic"
+    paste("R is ", txt)
+}
+my_function()
+
+fruits <- c('banana','apple','orange')
+fruits
+
+numbers <- 1:10
+numbers
+
+numbers1 <- 1.5:6.5
+numbers1
+
+log_values <- c(TRUE, FALSE,TRUE,FALSE)
+log_values
+
+fruits <- c("banana", "apple","orange")
+length(fruits)
+
+fruits <- c("banana", "apple","orange")
+numbers <- c(4,7,5,9,6)
+sort(fruits)
+sort(numbers)
+
+repeat_each<- rep(c(1,2,3), each = 3)
+repeat_each
+
+repeat_independent<- rep(c(1,2,3),times = c(5,2,1))
+repeat_independent
+
+numbers <- seq(from = 0, to = 100, by = 20)
+numbers
+
+thislist <- list("apple","banana", "cherry")
+thislist
+
+thislist1 <- list("apple","banana", "cherry")
+thislist1[1]
+"apple" %in% thislist1
+append(thislist1, "orange")
+thislist1
+
+thislist <- list("banana", "apple", "cherry", "kiwi", "melon")
+(thislist)[2:5]
+
+list1 <- list("a", "b","c")
+list2 <- list(1,2,3)
+list3 <- c(list1, list2)
+list3
